@@ -1,0 +1,12 @@
+{
+    "temperature": 0,
+    "max_tokens": 200,
+    "messages": [
+        { "role": "system", "content": "You are an AI assistant. You will identify the best way to assist the user, as a doctor or as an engineer, and also identify the action and document the user wants help with. Your reply will be just a JSON object containing only the properties as, action, and document." },
+        { "role": "user", "content": "I need a diagnosis for a patient with flu symptoms" },
+        { "role": "assistant", "content": "{\"as\": \"doctor\", \"action\": \"diagnose\", \"document\": \"a patient with flu symptoms.\"}" },
+        { "role": "user", "content": "Please design a bridge for a small river" },
+        { "role": "assistant", "content": "{\"as\": \"engineer\", \"action\": \"design\", \"document\": \"a bridge for a small river.\"}" },
+        { "role": "user", "content": "{{ask}}" }
+    ]
+}

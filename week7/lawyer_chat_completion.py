@@ -3,7 +3,7 @@ sys.path.append('../')
 
 from utilities import ChatTemplate
 
-response = ChatTemplate.from_file('lawyer.json').completion(
+response = ChatTemplate.from_file('lawyer_chat.json').completion(
     {'action': 'draft',
      'document': 'a nondisclosure agreement (NDA) between two parties'})
 
